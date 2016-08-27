@@ -25,5 +25,12 @@ public class App {
 		}else{
 			System.out.println("No es una carpeta");
 		}
+		
+//		Mediante un if si es un fichero
+		if(ruta1.isFile()){
+			System.out.println("Es un fichero");
+		}else{
+			System.out.println("No es un fichero");
+		}
 	}
 }//fin class consola.App
