@@ -32,5 +32,14 @@ public class App {
 		}else{
 			System.out.println("No es un fichero");
 		}
+		
+//		Compruebo si existe una carpeta, sino la creo
+		File carpetaTemp = new File("C:/Temp");
+		if(!carpetaTemp.exists()){
+			carpetaTemp.mkdirs();
+			System.out.println("Creada carpeta Temp");
+		}else{
+			System.out.println("Ya existe");
+		}
 	}
 }//fin class consola.App
