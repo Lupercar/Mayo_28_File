@@ -54,6 +54,19 @@ public class App {
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
-
+		
+//		Ejecutar una aplicación
+		File notepad = new File("c:/windows/notepad.exe");
+		
+		System.out.println(notepad.getAbsolutePath());
+		try {
+			System.out.println(notepad.getCanonicalPath());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+//		if(notepad.canExecute()){
+//			Runtime.getRuntime().exec(ruta_fichero_a_ejecutar); 
+//		}
 	}
 }// fin class consola.App
